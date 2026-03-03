@@ -1,0 +1,41 @@
+*{
+   margin:0;
+}
+.contenido{
+   color: rgb(0, 0, 0);
+   font-size: 1.5em;
+   font-family: sans-serif;
+   font-weight: 500;
+   font-optical-sizing: auto;
+   font-style: normal;
+   margin-top:5%;
+   margin-bottom: 5%;
+}
+h1{
+     color: rgb(190, 56, 150);
+     font-family: "Julius Sans One", sans-serif;
+     font-weight: 1000;
+     margin-bottom: 1%;
+
+
+}
+
+.titulo{
+    margin-bottom: 1%;
+    margin-top: 1%;
+    color: rgb(190, 56, 150);
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 1000;
+
+}
+
+
+.home {
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 1%;
+    color: rgb(0, 0, 0);
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 1000;
+
+}
