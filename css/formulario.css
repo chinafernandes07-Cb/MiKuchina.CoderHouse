@@ -3,8 +3,8 @@
 }
 
 .formulario-receta {
+            align-items: center;
             margin-top: 7%;
-            max-width: 800px;
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 8px;
@@ -47,4 +47,23 @@
          
         }
 
-     
+
+        /*estilo para celular */
+
+
+        @media (max-width: 768px) {
+         
+        .formulario-receta {
+            width: auto;
+            height: 350px;
+            align-items: center;
+            margin-top: 7%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-family: Arial, sans-serif;
+        }
+
+        
+   
+     }

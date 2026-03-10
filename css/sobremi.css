@@ -1,6 +1,10 @@
 *{
    margin:0;
+   padding: 0;
+   
 }
+
+
 .contenido{
    color: rgb(0, 0, 0);
    font-size: 1.5em;
@@ -10,6 +14,12 @@
    font-style: normal;
    margin-top:5%;
    margin-bottom: 5%;
+}
+
+.carousel-inner{
+     height: 600px; /* Ajusta a la altura que quieras */
+    object-fit: cover; /* Esto hace que la imagen rellene el espacio sin estirarse */
+    object-position: center; /* Centra la imagen si se recorta */
 }
 h1{
      color: rgb(190, 56, 150);
@@ -33,9 +43,13 @@ h1{
 .home {
     text-align: center;
     text-decoration: none;
+    text-shadow: 15px;
     margin-bottom: 1%;
     color: rgb(0, 0, 0);
     font-family: "Julius Sans One", sans-serif;
     font-weight: 1000;
 
 }
+
+
+    
