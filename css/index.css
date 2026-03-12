@@ -187,12 +187,13 @@ a h6 {
 
 /* Boton para volver al inicio */
 
-.mikuchina a h4{
+a h4{
 
     text-align: center;
     font-family: "Julius Sans One", sans-serif;
     font-weight: 1000;
     color: rgb(253, 2, 2);
+    margin-top: 10%;
 
 
 }
