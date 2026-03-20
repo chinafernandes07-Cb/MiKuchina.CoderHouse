@@ -238,26 +238,7 @@ footer img:hover {
     transform: scale(1.1); /* Agranda un poquito el icono al tocarlo */
 }
 
-/*//////////////////////////// Medidas para un telefono////////////////////////////////////////////////////////////////////// */
 
-
- @media (max-width: 768px) {
-
-/* Titulo, se cambia en todos los segmentos */    
-
-    nav h3{
-    margin:0;
-    color:rgb(0, 0, 0);
-    font-size:2em;
-    font-family: "Julius Sans One", sans-serif;
-    font-weight: 1000;
-    font-style: normal;
-    display: flex; 
-    padding: 1%; 
-    } 
-
-
-}
 
 /* /////////////////////////////////////////////////////////////////////////////formulario ///////////////////////////////////////////////*/
 
@@ -323,11 +304,18 @@ footer img:hover {
 
 .carousel-inner{
     height: 600px; 
-    object-fit: cover; 
-    object-position: center; 
+    object-fit:cover;  
+    object-position:center;
 }
 
+.carousel-item img {
+    height: 600px; /* Ajustá este valor a tu gusto */
+    object-fit: cover; /* Evita que la imagen se estire */
+}
 
+.carousel-inner button{
+background-color: #ffffff00!important;
+}
 
 /* texto de sobre mi */
 
@@ -364,51 +352,3 @@ footer img:hover {
 
 
 
-/*////////////////////////////////////////////////////// QUERIES ////////////////////////////////////////////////////////////////////////*/
-
-
-
-    @media screen and (max-width: 480px) {
-
-  nav {
-    font-size: 1em; 
-    padding: 10px;
-    width: 550px;
-    height: 80px;
-  }
-
-  nav ul {
-        gap: 0.5rem;
-        padding: 5px;
-    }
-
-          .formulario {
-            display: inline-block;
-            
-        }    
-         
-        .formulario-receta {
-            width: auto;
-            height: 350px;
-            align-items: center;
-            margin-top: 7%;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-family: Arial, sans-serif;
-        }
-
-
-        .formulario-receta h2{
-            text-align: center;
-         
-            
-        }
-
-        footer {
-        width: 550px;
-        height: auto;
-        padding: 20px 0;
-    }
-
-}
