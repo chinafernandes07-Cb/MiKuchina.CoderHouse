@@ -26,8 +26,6 @@ nav ul a{
     color: rgb(0, 0, 0);
     list-style-type: none;
     text-decoration: none;
-    
-
 }
 
 nav h3{
@@ -53,13 +51,12 @@ nav h3{
 .opciones-recetas {
   margin: 0;
   display: flex;           /* Activa el modo flexible */
-  justify-content: center; /* Centra los elementos (opcional) */
+  justify-content: center; /* Centra los elementos  */
   gap: 5%;               /* Crea espacio entre las fotos */
   
 }
 
 .fotopcion{
-    flex-direction: row;
     width: 350px; 
     height: 350px;
     border-radius: 5%;
@@ -165,7 +162,6 @@ a h6 {
     font-size: x-large;
     width: 100%;
     color: rgb(0, 0, 0);
-    font-size: x-large;
     margin-top:5%;
     margin-bottom: 5%;
     display: grid;
@@ -219,11 +215,10 @@ footer h6 {
     text-align: center;
 }
 
-/* Contenedor para que los iconos estén uno al lado del otro */
+/* Iconos redes sociales */
 
 .redes-sociales {
     display: flex;
-    gap: 20px;            /* Espacio entre Instagram y WhatsApp */
     justify-content: center;
 }
 
@@ -352,3 +347,239 @@ background-color: #ffffff00!important;
 
 
 
+/* ///////////////////////////querys///////////////////////////////////////////////////////*/
+
+
+/* Para celulares */
+
+@media screen and (max-width: 481px)  { 
+
+    /*nav*/
+
+   nav{
+    width: 100%;
+    font-size: 0.5rem;
+   }
+
+   nav ul{
+    font-size: 12px;
+    gap:0.3rem;
+    margin: 0 auto;
+   }
+
+   /*fotos 4*/
+   
+    .opciones-recetas {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    .opciones-foto {
+        width: 20%; 
+        padding: 1px; 
+        box-sizing: border-box;
+    }
+
+    .fotopcion {
+        width: 100%; 
+        height: 150px; 
+        object-fit: cover; 
+        border-radius: 10px; 
+    }
+    
+    .opciones-foto h5 {
+        font-size: 14px; 
+        margin-bottom: 5px;
+    }
+
+    /*ingredientes de la receta*/
+
+    .recetatitulo{
+        font-size: 1rem;
+    }
+
+    .imag-destacada {
+    width: 150px;           /* El ancho y el alto deben ser iguales */
+    height: 150px;
+  }  
+
+
+  .container {
+   font-size: 10px;
+   grid-template-columns: 1fr 1fr;
+   gap: 10%;
+   margin: 0 auto;
+   } 
+
+   .container h4{
+    font-size: small;
+    text-align: center;
+   }
+
+ /* Texto en donde va la receta */
+
+ .recetario {
+
+    font-size:10px;
+    width: 100%;
+    grid-template-columns: none;
+    margin: 0 auto;
+    
+ }
+
+  .imag-costado{
+    display: none;
+  }
+
+
+  /* Boton para volver al inicio */
+
+a h4{
+
+    font-size: 10PX;
+
+}
+
+  /*Footer */
+
+
+footer h6 {
+    font-size: 10PX;
+}
+
+
+footer .instagram, 
+footer .whatsapp {
+    width: 20px;         
+    height: auto;
+    transition: transform 0.3s; /* Efecto suave al pasar el mouse */
+}
+
+footer img:hover {
+    transform: scale(1.1); /* Agranda un poquito el icono al tocarlo */
+}
+
+ /* sobre mi */
+
+
+/*fotos del carrousel*/
+
+.carousel-inner{
+    height:200px; 
+}
+
+.carousel-item img {
+    height: 200px; /* Ajustá este valor a tu gusto */
+}
+
+
+
+/* texto de sobre mi */
+
+   .contenido{
+   font-size: 10px;
+
+ }
+
+ /* formulario */
+
+.formulario {
+    margin:0 auto;
+    display: block;
+    padding:30px 0;
+}
+     
+}
+
+ /* Para tablets */
+
+@media (max-width: 768px) {
+       /*fotos 4*/
+   
+    .opciones-recetas {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    .opciones-foto {
+        width: 20%; 
+        padding: 1px; 
+        box-sizing: border-box;
+    }
+
+    .fotopcion {
+        width: 100%; 
+        height: 150px; 
+        object-fit: cover; 
+        border-radius: 10px; 
+    }
+    
+    .opciones-foto h5 {
+        font-size: 14px; 
+        margin-bottom: 5px;
+    }
+
+        /*ingredientes de la receta*/
+
+    .recetatitulo{
+        font-size: 2rem;
+    }
+
+    .imag-destacada {
+    width: 200px;           /* El ancho y el alto deben ser iguales */
+    height: 200px;
+  }  
+
+
+  .container {
+   font-size: 15px;
+   grid-template-columns: 1fr 1fr;
+   gap: 10%;
+   margin: 0 auto;
+   } 
+
+   .container h4{
+    font-size: 20px;
+    text-align: center;
+   }
+
+ /* Texto en donde va la receta */
+
+ .recetario {
+
+    font-size:20px;
+    width: 100%;
+    grid-template-columns: none;
+    margin: 0 auto;
+    
+ }
+
+  .imag-costado{
+    display: none;
+  }
+
+ /* sobre mi */
+
+
+/*fotos del carrousel*/
+
+.carousel-inner{
+    height:400px; 
+}
+
+.carousel-item img {
+    height: 400px; /* Ajustá este valor a tu gusto */
+}
+
+
+
+/* texto de sobre mi */
+
+   .contenido{
+   font-size: 20px;
+
+ }
+    
+}
