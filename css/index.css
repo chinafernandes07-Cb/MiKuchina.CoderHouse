@@ -1,586 +1,434 @@
-*{
-   margin:0;
-   padding: 0;
-   box-sizing: border-box;
-   
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Barra de navegación */
-
-nav{
-display: flex;
-background-color:rgba(97, 93, 93, 0.178);;
-width:100%;
-height: 80px;
-justify-content: space-between;
-align-items: center;
+nav {
+  display: flex;
+  background-color: rgba(97, 93, 93, 0.178);
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav ul{
-    display: flex;
-    gap: 1rem;
-    padding: 3%;
+nav ul {
+  display: flex;
+  gap: 1rem;
+  padding: 3%;
+}
+nav ul a {
+  color: rgb(0, 0, 0);
+  list-style-type: none;
+  text-decoration: none;
 }
 
-nav ul a{
-    color: rgb(0, 0, 0);
-    list-style-type: none;
-    text-decoration: none;
-}
-
-nav h3{
-    margin:0;
-    color:rgb(0, 0, 0);
-    font-size:4em;
-    font-family: "Julius Sans One", sans-serif;
-    font-weight: 1000;
-    font-style: normal;
-    display: flex; 
-    padding: 1%;  
-}
-
-
-.portada-imagen{
-    width: 100%;
-    object-fit: cover;
-}
-
-
-/* Seccion de opciones de recetas */
-
-.opciones-recetas {
+nav h3 {
   margin: 0;
-  display: flex;           /* Activa el modo flexible */
-  justify-content: center; /* Centra los elementos  */
-  gap: 5%;               /* Crea espacio entre las fotos */
-  
+  color: rgb(0, 0, 0);
+  font-size: 4em;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+  display: flex;
+  padding: 1%;
 }
 
-.fotopcion{
-    width: 350px; 
-    height: 350px;
-    border-radius: 5%;
+.portada-imagen {
+  width: 100%;
+  object-fit: cover;
 }
 
-
-/* Tamaño de los textos sobre las fotos */
-
-a h5{                     
-    margin-top:15%;
-    margin-bottom: 10%;
-    font-size: x-large;
-    font-weight: bold;
-}
-
-main a {
-    text-decoration: none;
-    font-size: xx-large;
-    color:rgb(0, 0, 0);
-    font-size:medium;
-    text-align: center;
-    font-family: "Julius Sans One", sans-serif;
-    font-weight: 1000;
-    font-style: normal;
-    
-}
-
-hr {                     
-    margin-top:5%;
-
-}
-
-/* Fideos Caseros - Receta*/
-
-.recetatitulo {
-  
-   height: 100%;
-   color: rgb(0, 0, 0);
-   font-size: 4em;
-   font-family: "Julius Sans One", sans-serif;
-   text-align: center;
-   margin-top:3%;
-   margin-bottom: 5%;
-}
-
-.imag-destacada {
-    width: 350px;           /* El ancho y el alto deben ser iguales */
-    height: 350px;
-    border-radius: 50%;    /* Esto crea el efecto circular */
-    object-fit: cover;
-  }  
-
-.container {
-   margin: 0;
-   width: 100%;
-   color: rgb(0, 0, 0);
-   font-size: x-large;
-   font-family: "Julius Sans One", sans-serif;
-   text-align:justify;
-   margin-top:5%;
-   margin-bottom: 5%;
-   display: grid;
-   grid-template-columns: 2fr 1fr;
-   gap: 30%;
-   
-  } 
-
-  .container div{
-    margin: 0;
-    justify-content: center; /* Centra los elementos (opcional) */
-    gap: 10%;               /* Crea espacio entre las fotos */
-    
-  }
-
-  .container div h4{
-    margin-top: 10%;
-  }
-
-
- h4 {
-    color: rgb(24, 24, 56);
-    font-size: xx-large;
-    margin-bottom: 1%;
-      }
-
-
-h3 {
-    margin-bottom: 1%;
-    color: rgb(24, 24, 56);
-    font-size: xx-large;
-      }      
-
-a h6 {
-    color: rgb(24, 24, 56);
-    font-size: medium;
-      }      
-
-
- /* Texto en donde va la receta */
-
- .recetario {
-
-    font-size: x-large;
-    width: 100%;
-    color: rgb(0, 0, 0);
-    margin-top:5%;
-    margin-bottom: 5%;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    margin: 0;
-    
- }
-
- .imag-costado {
-    margin-left: 30px;
-    width: 350px;          
-    height: 350px;
-    border-radius: 50%;    
-    object-fit: cover;
-    margin-top: 20px;
-  }  
-      
-
-/* Boton para volver al inicio */
-
-a h4{
-
-    text-align: center;
-    font-family: "Julius Sans One", sans-serif;
-    font-weight: 1000;
-    color: rgb(253, 2, 2);
-    margin-top: 10%;
-
-
-}
-
-/* //////////////////////////////////////////Footer ////////////////////////////////////////////*/
-
+/* Footer */
 footer {
-    background-color: grey;
-    width: 100%;
-    padding: 20px 0; 
-    display: flex;
-    flex-direction: column; /* Apila el texto arriba y los iconos abajo */
-    align-items: center;    /* Centra todo horizontalmente */
-    justify-content: center;
-    gap: 15px;             /* Espacio entre elementos */
+  background-color: grey;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column; /* Apila el texto arriba y los iconos abajo */
+  align-items: center; /* Centra todo horizontalmente */
+  justify-content: center;
+  gap: 15px; /* Espacio entre elementos */
 }
 
 footer h6 {
-    color: rgb(253, 253, 253);
-    font-size: 1rem;
-    font-family: "Julius Sans One", sans-serif;
-    font-weight: 1000;
-    margin: 0;            
-    text-align: center;
+  color: rgb(253, 253, 253);
+  font-size: 1rem;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 1000;
+  margin: 0;
+  text-align: center;
 }
 
 /* Iconos redes sociales */
-
 .redes-sociales {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-footer .instagram, 
+footer .instagram,
 footer .whatsapp {
-    width: 40px;         
-    height: auto;
-    transition: transform 0.3s; /* Efecto suave al pasar el mouse */
+  width: 40px; /* El ancho y el alto deben ser iguales */
+  height: auto;
+  transition: transform 0.3s; /* Efecto suave al pasar el mouse */
 }
 
 footer img:hover {
-    transform: scale(1.1); /* Agranda un poquito el icono al tocarlo */
+  transform: scale(1.1); /* Agranda un poquito el icono al tocarlo */
 }
 
+/* Pagina principal - index*/
+/* Seccion de opciones de recetas */
+.opciones-recetas {
+  margin: 0;
+  display: flex; /* Activa el modo flexible */
+  justify-content: center; /* Centra los elementos  */
+  gap: 5%; /* Crea espacio entre las fotos */
+}
 
+.fotopcion {
+  width: 350px;
+  height: 350px;
+  border-radius: 5%;
+}
 
-/* /////////////////////////////////////////////////////////////////////////////formulario ///////////////////////////////////////////////*/
+/* Tamaño de los textos sobre las fotos */
+a h5 {
+  margin-top: 15%;
+  margin-bottom: 10%;
+  font-size: x-large;
+  font-weight: bold;
+}
 
+main a {
+  text-decoration: none;
+  font-size: xx-large;
+  color: rgb(0, 0, 0);
+  font-size: medium;
+  text-align: center;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+hr {
+  margin-top: 5%;
+}
+
+/* Fideos Caseros - Receta*/
+.recetatitulo {
+  height: 100%;
+  color: rgb(0, 0, 0);
+  font-size: 4em;
+  font-family: "Julius Sans One", sans-serif;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.imag-destacada {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%; /* Esto crea el efecto circular */
+  object-fit: cover;
+}
+
+.container {
+  margin: 0;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  font-size: x-large;
+  font-family: "Julius Sans One", sans-serif;
+  text-align: justify;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30%;
+}
+.container div {
+  margin: 0;
+  justify-content: center; /* Centra los elementos (opcional) */
+  gap: 10%; /* Crea espacio entre las fotos */
+}
+.container div h4 {
+  margin-top: 10%;
+}
+
+h4 {
+  color: rgb(0, 0, 0);
+  font-size: xx-large;
+  margin-bottom: 1%;
+}
+
+h3 {
+  margin-bottom: 1%;
+  color: rgb(0, 0, 0);
+  font-size: xx-large;
+}
+
+a h6 {
+  color: rgb(0, 0, 0);
+  font-size: medium;
+}
+
+/* Texto en donde va la receta */
+.recetario {
+  font-size: x-large;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 0;
+}
+
+.imag-costado {
+  width: 350px;
+  height: 350px;
+  margin-left: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+/* Boton para volver al inicio */
+a h4 {
+  text-align: center;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 1000;
+  color: rgb(253, 2, 2);
+  margin-top: 10%;
+}
+
+/*carrousel*/
+.carousel-item img {
+  height: 600px;
+  object-fit: cover;
+}
+
+.carousel-inner button {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+/* texto de sobre mi */
+.contenido {
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-top: 5%;
+  margin: 5% 5% 5% 5%;
+}
+.contenido h1 {
+  text-align: center;
+  color: rgb(89, 5, 97);
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.titulo {
+  color: rgb(89, 5, 97);
+  font-size: 1.5em;
+  margin-left: 30px;
+  padding-top: 20px;
+}
+
+/*formaulario*/
 .formulario {
-    margin: 30px 30px 30px 30px;
-    display: flex;
+  margin: 30px 30px 30px 30px;
+  display: flex;
 }
-
 
 .formulario-receta {
-            width: 100%;
-            align-items: center;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-family: Arial, sans-serif;
-            
-        }
-        .campo {
-            margin-top: 5%;
-            margin-bottom: 15px;
-        }
-
-        label {
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        textarea {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-
-        .inicio{
-           text-decoration: none;
-           text-align: center;
-           font-family: "Julius Sans One", sans-serif;
-           
-         
-        }
-
-
-     
-
-/* /////////////////////////////////////////////////////////////////sobre mi ////////////////////////////////////////////*/
-
-
-/*fotos del carrousel*/
-
-.carousel-inner{
-    height: 600px; 
-    object-fit:cover;  
-    object-position:center;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
 }
 
-.carousel-item img {
-    height: 600px; /* Ajustá este valor a tu gusto */
-    object-fit: cover; /* Evita que la imagen se estire */
+.campo {
+  margin-top: 5%;
+  margin-bottom: 15px;
 }
 
-.carousel-inner button{
-background-color: #ffffff00!important;
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-/* texto de sobre mi */
-
-   .contenido{
-   color: rgb(0, 0, 0);
-   font-size: 1.5em;
-   font-family: sans-serif;
-   font-weight: 500;
-   font-optical-sizing: auto;
-   font-style: normal;
-   margin-top:5%;
-   margin: 5% 5% 5% 5%;
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.contenido h1{
-    text-align: center;
-    color: rgb(89, 5, 97);
-    font-size: 2em;
-    margin-top: 20px;
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
 }
 
-.titulo{
-    color: rgb(89, 5, 97);
-    font-size: 1.5em;
-    margin-left: 30px;
-    padding-top: 20px;
+button:hover {
+  background-color: #45a049;
 }
 
-.enviame{
-    text-decoration: none;
-    color:  rgb(253, 2, 98);
-    font-size: 1em;
+.inicio {
+  text-decoration: none;
+  text-align: center;
+  font-family: "Julius Sans One", sans-serif;
 }
 
-
-
-/* ///////////////////////////querys///////////////////////////////////////////////////////*/
-
- /* Para tablets */
-
+/* Para tablets */
 @media (max-width: 768px) {
-       /*fotos 4*/
-   
-    .opciones-recetas {
-        display: flex;
-        flex-wrap: wrap; 
-        justify-content: center;
-    }
-
-    .opciones-foto {
-        width: 20%; 
-        padding: 1px; 
-        box-sizing: border-box;
-    }
-
-    .fotopcion {
-        width: 100%; 
-        height: 150px; 
-        object-fit: cover; 
-        border-radius: 10px; 
-    }
-    
-    .opciones-foto h5 {
-        font-size: 14px; 
-        margin-bottom: 5px;
-    }
-
-        /*ingredientes de la receta*/
-
-    .recetatitulo{
-        font-size: 2rem;
-    }
-
-    .imag-destacada {
-    width: 200px;           /* El ancho y el alto deben ser iguales */
+  /*fotos 4*/
+  .opciones-recetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .opciones-foto {
+    width: 20%;
+    padding: 1px;
+    box-sizing: border-box;
+  }
+  .fotopcion {
+    width: 100%; /* El ancho y el alto deben ser iguales */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .opciones-foto h5 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  /*ingredientes de la receta*/
+  .recetatitulo {
+    font-size: 2rem;
+  }
+  .imag-destacada {
+    width: 200px; /* El ancho y el alto deben ser iguales */
     height: 200px;
-  }  
-
-
+  }
   .container {
-   font-size: 15px;
-   grid-template-columns: 1fr 1fr;
-   gap: 10%;
-   margin: 0 auto;
-   } 
-
-   .container h4{
+    font-size: 15px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+    margin: 0 auto;
+  }
+  .container h4 {
     font-size: 20px;
     text-align: center;
-   }
-
- /* Texto en donde va la receta */
-
- .recetario {
-
-    font-size:20px;
+  }
+  /* Texto en donde va la receta */
+  .recetario {
+    font-size: 20px;
     width: 100%;
     grid-template-columns: none;
     margin: 0 auto;
-    
- }
-
-  .imag-costado{
+  }
+  .imag-costado {
     display: none;
   }
-
- /* sobre mi */
-
-
-/*fotos del carrousel*/
-
-.carousel-inner{
-    height:400px; 
-}
-
-.carousel-item img {
+  /* sobre mi */
+  /*fotos del carrousel*/
+  .carousel-inner {
+    height: 400px;
+  }
+  .carousel-item img {
     height: 400px; /* Ajustá este valor a tu gusto */
+  }
+  /* texto de sobre mi */
+  .contenido {
+    font-size: 20px;
+  }
 }
-
-
-
-/* texto de sobre mi */
-
-   .contenido{
-   font-size: 20px;
-
- }
-    
-}
-
-
-/* Para celulares */
-
-@media screen and (max-width: 481px)  { 
-
-    /*nav*/
-
-   nav{
+/* celulares*/
+@media screen and (max-width: 481px) {
+  /*nav*/
+  nav {
     width: 100%;
     font-size: 0.5rem;
-   }
-
-   nav ul{
+  }
+  nav ul {
     font-size: 12px;
-    gap:0.3rem;
+    gap: 0.3rem;
     margin: 0 auto;
-   }
-
-   /*fotos 4*/
-   
-    .opciones-recetas {
-        display: flex;
-        flex-wrap: wrap; 
-        justify-content: center;
-    }
-
-    .opciones-foto {
-        width: 20%; 
-        padding: 1px; 
-        box-sizing: border-box;
-    }
-
-    .fotopcion {
-        width: 100%; 
-        height: 150px; 
-        object-fit: cover; 
-        border-radius: 10px; 
-    }
-    
-    .opciones-foto h5 {
-        font-size: 14px; 
-        margin-bottom: 5px;
-    }
-
-    /*ingredientes de la receta*/
-
-    .recetatitulo{
-        font-size: 1rem;
-    }
-
-    .imag-destacada {
-    width: 150px;           /* El ancho y el alto deben ser iguales */
+  }
+  /*ingredientes de la receta*/
+  .recetatitulo {
+    font-size: 1rem;
+  }
+  .imag-destacada {
+    width: 150px; /* El ancho y el alto deben ser iguales */
     height: 150px;
-  }  
-
-
+  }
   .container {
-   font-size: 10px;
-   grid-template-columns: 1fr 1fr;
-   gap: 10%;
-   margin: 0 auto;
-   } 
-
-   .container h4{
+    font-size: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+    margin: 0 auto;
+  }
+  .container h4 {
     font-size: small;
     text-align: center;
-   }
-
- /* Texto en donde va la receta */
-
- .recetario {
-
-    font-size:10px;
+  }
+  /* Texto en donde va la receta */
+  .recetario {
+    font-size: 10px;
     width: 100%;
     grid-template-columns: none;
     margin: 0 auto;
-    
- }
-
-  .imag-costado{
+  }
+  .imag-costado {
     display: none;
   }
-
-
   /* Boton para volver al inicio */
-
-a h4{
-
+  a h4 {
     font-size: 10PX;
-
-}
-
+  }
   /*Footer */
-
-
-footer h6 {
+  footer h6 {
     font-size: 10PX;
-}
-
-
-footer .instagram, 
-footer .whatsapp {
-    width: 20px;         
+  }
+  footer .instagram,
+  footer .whatsapp {
+    width: 20px;
     height: auto;
     transition: transform 0.3s; /* Efecto suave al pasar el mouse */
-}
-
-footer img:hover {
+  }
+  footer img:hover {
     transform: scale(1.1); /* Agranda un poquito el icono al tocarlo */
-}
-
- /* sobre mi */
-
-
-/*fotos del carrousel*/
-
-.carousel-inner{
-    height:200px; 
-}
-
-.carousel-item img {
+  }
+  /* sobre mi */
+  .carousel-inner {
+    height: 200px;
+  }
+  .carousel-item img {
     height: 200px; /* Ajustá este valor a tu gusto */
-}
-
-
-
-/* texto de sobre mi */
-
-   .contenido{
-   font-size: 10px;
-
- }
-
- /* formulario */
-
-.formulario {
-    margin:0 auto;
+  }
+  /* texto de sobre mi */
+  .contenido {
+    font-size: 10px;
+  }
+  /* formulario */
+  .formulario {
+    margin: 0 auto;
     display: block;
-    padding:30px 0;
-}
-     
+    padding: 30px 0;
+  }
 }
 
+/*# sourceMappingURL=index.css.map */

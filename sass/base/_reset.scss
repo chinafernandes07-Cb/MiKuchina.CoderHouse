@@ -1,0 +1,93 @@
+
+//variables
+@use "../utilities/variables" as *;
+
+//mixin
+@use "../utilities/mixin" as *;
+
+
+
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   
+}
+
+/* Barra de navegación */
+
+nav{
+display: flex;
+background-color: $color-nav;
+width:100%;
+height: 80px;
+justify-content: space-between;
+align-items: center;
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+    padding: 3%;
+        a{
+    color:$colortipo;
+    list-style-type: none;
+    text-decoration: none;
+   }
+}
+
+nav h3{
+    margin:0;
+    color:$colortipo;
+    font-size:4em;
+    font-family:$tipo-julius;
+    font-weight: 1000;
+    font-style: normal;
+    display: flex; 
+    padding: 1%;  
+}
+
+.portada-imagen{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: grey;
+    width: 100%;
+    padding: 20px 0; 
+    display: flex;
+    flex-direction: column; /* Apila el texto arriba y los iconos abajo */
+    align-items: center;    /* Centra todo horizontalmente */
+    justify-content: center;
+    gap: 15px;             /* Espacio entre elementos */
+}
+
+footer h6 {
+    color: rgb(253, 253, 253);
+    font-size: 1rem;
+    font-family: $tipo-julius;
+    font-weight: 1000;
+    margin: 0;            
+    text-align: center;
+}
+
+/* Iconos redes sociales */
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+}
+
+footer .instagram, 
+footer .whatsapp {
+    @include w-h (40px, auto);
+    transition: transform 0.3s; /* Efecto suave al pasar el mouse */
+}
+
+footer img:hover {
+    transform: scale(1.1); /* Agranda un poquito el icono al tocarlo */
+}

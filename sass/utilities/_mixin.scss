@@ -1,0 +1,24 @@
+//con parametros
+@mixin grilla($columns){
+     grid-template-columns: $columns;
+}
+
+@mixin w-h ($whidth, $height) {
+    width: $whidth;           /* El ancho y el alto deben ser iguales */
+    height: $height;
+}
+
+//sin parametros
+@mixin wh-foto{
+    width: 350px;          
+    height: 350px;
+
+}
+
+@mixin carrousel {
+   height: 600px; 
+   object-fit:cover; 
+
+}
+
+//con/sin paramtros

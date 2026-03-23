@@ -1,0 +1,62 @@
+// variables
+
+@use"../utilities/variables" as*;
+
+//mixin
+
+@use"../utilities/mixin" as *;
+
+
+/*formaulario*/
+
+.formulario {
+    margin: 30px 30px 30px 30px;
+    display: flex;
+}
+
+.formulario-receta {
+            width: 100%;
+            align-items: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-family: Arial, sans-serif;
+            
+        }
+        .campo {
+            margin-top: 5%;
+            margin-bottom: 15px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .inicio{
+           text-decoration: none;
+           text-align: center;
+           font-family: "Julius Sans One", sans-serif;
+           
+         
+        }
+

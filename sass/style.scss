@@ -1,0 +1,25 @@
+//importe del archivo reset 
+
+@use"base/reset.scss";
+
+
+//index
+
+@use"pages/index.scss";
+
+//Sobre mi
+
+@use"pages/sobremi.scss";
+
+//Formulario
+
+@use"pages/formulario.scss";
+
+
+//query tablet
+
+@use"layout/_mq-tablet.scss";
+
+//query mobil 
+
+@use"layout/_mq-desktop.scss";

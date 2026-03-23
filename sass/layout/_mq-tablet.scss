@@ -1,0 +1,101 @@
+// variables
+
+@use"../utilities/variables" as*;
+
+//mixin
+
+@use"../utilities/mixin" as *;
+
+
+/* Para tablets */
+
+@media (max-width: 768px) {
+   
+    /*fotos 4*/   
+    .opciones-recetas {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+      .opciones-foto {
+        width: 20%; 
+        padding: 1px; 
+        box-sizing: border-box;
+    }
+
+    .fotopcion {
+        @include w-h (100%,150px);
+        object-fit: cover; 
+        border-radius: 10px; 
+    }
+    
+    .opciones-foto h5 {
+        font-size: 14px; 
+        margin-bottom: 5px;
+    }
+
+    
+    /*ingredientes de la receta*/
+
+    .recetatitulo{
+        font-size: 2rem;
+    }
+
+    .imag-destacada {
+    @include w-h (200px,200px);
+  }  
+
+
+  .container {
+   font-size: 15px;
+   @include grilla (1fr 1fr);
+   gap: 10%;
+   margin: 0 auto;
+   } 
+
+   .container h4{
+    font-size: 20px;
+    text-align: center;
+   }
+
+   /* Texto en donde va la receta */
+
+ .recetario {
+
+    font-size:20px;
+    width: 100%;
+    @include grilla (none);
+    margin: 0 auto;
+    
+ }
+
+  .imag-costado{
+    display: none;
+  }
+
+   /* sobre mi */
+
+
+/*fotos del carrousel*/
+
+.carousel-inner{
+    height:400px; 
+}
+
+.carousel-item img {
+    height: 400px; /* Ajustá este valor a tu gusto */
+}
+
+
+/* texto de sobre mi */
+
+   .contenido{
+   font-size: 20px;
+
+ }
+    
+}
+
+
+
